@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 
 *{
@@ -9,26 +10,58 @@
     text-decoration: none;
 }
 
+
 body{
 font-family: 'Roboto', sans-serif;
 background: #f8f8f8;
 }
 
-.sidebar {
+
+
+/**
+for the sidebar
+**/
+.container .sidebar{
+    background: rgb(253, 253, 253);
     position: fixed;
-    width: 300px;
-    height: 100vh;
-    background: #f8f8f8;
-    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;  
+    border: 1px solid rgb(238, 220, 220);
 }
 
-.main-home{
-    position: absolute;
-    width: calc(100% - 300px);
-    min-height: 100vh;
-    top: 0;
-    left: 300px;
-    background: #fff;
-    border-radius: 1rem 0 0 1rem;
-    z-index: 1000;
+
+
+/**
+for the items at the sidebar
+**/
+.container .sidebar ul li a{
+    display: block;
+    padding: 25px 30px;
+    color: black;
+    position: relative;
+}
+
+
+
+/**
+for the icons at the sidebar
+**/
+.container .sidebar ul li a .icon{
+    width: 30px;
+    display: inline-block;
+}
+
+
+/**
+for the instagram logo at the sidebar
+**/
+.container .sidebar .logo{
+    display: block;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    font-size: 26px; 
+    font-family: 'Pacifico', cursive;
 }
