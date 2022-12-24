@@ -258,7 +258,8 @@ for the instagram logo at the sidebar
 }
 
 .comment-btn,
-.action-btn{
+.action-btn,
+.action-btns{
     width: 70px;
     height: 100%;
     background: none;
@@ -294,10 +295,22 @@ for the instagram logo at the sidebar
 .profile-card{
     width: fit-content;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
+
+
+
+.test{
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
 
 .profile-card .profile-pic{
     flex: 0 0 auto;
@@ -341,4 +354,11 @@ for the instagram logo at the sidebar
     color: rgba(0, 0, 0, 0.5);
     font-weight: 700;
     margin: 20px 0;
+}
+
+.action-btns{
+    opacity: 1;
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 2rem;
 }
